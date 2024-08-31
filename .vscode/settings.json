@@ -1,0 +1,28 @@
+{
+    "folder-color.pathColors": [
+        {
+            "folderPath": "api-fast-clips\\src\\repositories\\",
+            "color": "foldercolorizer.DarkViolet"
+        },
+        {
+            "folderPath": "api-fast-clips\\src\\middlewares\\",
+            "color": "foldercolorizer.orange"
+        },
+        {
+            "folderPath": "api-fast-clips\\src\\controllers\\",
+            "color": "foldercolorizer.yellow"
+        },
+        {
+            "folderPath": "api-fast-clips\\src\\http\\",
+            "color": "foldercolorizer.LightBlue"
+        },
+        {
+            "folderPath": "api-fast-clips\\src\\routes\\",
+            "color": "foldercolorizer.green"
+        },
+        {
+            "folderPath": "api-fast-clips\\src\\services\\",
+            "color": "foldercolorizer.Magenta"
+        }
+    ]
+}

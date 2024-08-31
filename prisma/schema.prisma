@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Streamer {
+  id                String   @id @unique
+  login             String   @unique
+  display_name      String
+  type              String
+  broadcaster_type  String
+  description       String
+  profile_image_url String
+  offline_image_url String
+  view_count        Int
+  created_at        DateTime
+  clips             Clip[]
+}
+
+model Clip {
+  id               String   @id @unique
+  url              String
+  embed_url        String
+  broadcaster_id   String
+  broadcaster_name String
+  creator_id       String
+  creator_name     String
+  video_id         String
+  game_id          String
+  language         String
+  title            String
+  view_count       Int
+  created_at       String
+  thumbnail_url     String
+  duration         Float
+  vod_offseat      Int?
+  is_featured      Boolean
+  streamer         Streamer @relation(fields: [streamer_name], references: [login])
+  streamer_name    String
+}
