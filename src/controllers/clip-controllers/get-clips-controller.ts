@@ -4,7 +4,7 @@ import moment from "moment";
 import { GetClipsService } from "../../services/clips-services/get-clips-service";
 import { GetClipsHandleErrors } from "./errors/get-clips-handle-errors";
 
-export async function GetClipController(request: Request, response: Response) {
+export async function GetClipsController(request: Request, response: Response) {
 
 	const { amount, startedAt } = request.query;
 	const tokenTwitch = request.token;
