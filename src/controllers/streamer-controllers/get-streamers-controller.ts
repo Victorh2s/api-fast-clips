@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { StreamerRepositoryDatabase } from "../../repositories/database/streamer-repository-database";
 import { GetStreamersService } from "../../services/streamer-services/get-streamers-service";
-import { GetStreamersHandleErrors } from "./errors/get-streamers-handle-errors";
+import { GetStreamersHandleErrors } from "./errors/get-streamers-handle-errors copy";
 
 export async function GetStreamersController(request: Request, response: Response) {
 
