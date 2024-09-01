@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { ClipRepositoryDatabase } from "../../repositories/database/clip-repository-database";
 import { GetClipsSavesService } from "../../services/clips-services/get-clips-saves-service";
-import { GetClipsSavesHandleErrors } from "./errors/get-clips-saves-handle-errors copy";
+import { GetClipsSavesHandleErrors } from "./errors/get-clips-saves-handle-errors";
 
 export async function GetClipsSavesController (request: Request, response: Response) {
 
