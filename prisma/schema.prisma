@@ -43,7 +43,7 @@ model Clip {
   created_at       String
   thumbnail_url     String
   duration         Float
-  vod_offseat      Int?
+  vod_offset      Int?
   is_featured      Boolean
   streamer         Streamer @relation(fields: [streamer_name], references: [login])
   streamer_name    String

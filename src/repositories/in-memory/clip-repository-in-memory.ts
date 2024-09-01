@@ -17,7 +17,7 @@ export class ClipRepositoryInMemory implements ClipRepositoryInterface{
 	}
 	async removeClip(clipId: string){
 		const clipFound = this.itens.findIndex((item) => item.id === clipId);
-		this.itens.slice(clipFound, 1);
+		this.itens.splice(clipFound, 1);
 	}
 
 	async findClipById(clipId: string){

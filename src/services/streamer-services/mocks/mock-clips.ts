@@ -1,0 +1,91 @@
+export const mockClipsResponse = [
+	{
+		id: "SeductiveBlueLorisArsonNoSexy-bSX7O_fUUzXudW3u",
+		url: "https://clips.twitch.tv/SeductiveBlueLorisArsonNoSexy-bSX7O_fUUzXudW3u",
+		embed_url:
+      "https://clips.twitch.tv/embed?clip=SeductiveBlueLorisArsonNoSexy-bSX7O_fUUzXudW3u",
+		broadcaster_id: "517877705",
+		broadcaster_name: "gaulestv",
+		creator_id: "71649056",
+		creator_name: "dynamitwOw",
+		video_id: "",
+		game_id: "32399",
+		language: "pt-br",
+		title: "Fofuria",
+		view_count: 47,
+		created_at: "2024-08-12T13:21:11Z",
+		thumbnail_url:
+      "https://clips-media-assets2.twitch.tv/7xKGXG0l-zv31FM17nVt7g/AT-cm%7C7xKGXG0l-zv31FM17nVt7g-preview-480x272.jpg",
+		duration: 51.7,
+		vod_offset: null,
+		is_featured: false,
+		streamer_name: "gaulestv",
+	},
+	{
+		id: "TolerantSwissBaboonFailFish-3XXh37eRkQxCMWUR",
+		url: "https://clips.twitch.tv/TolerantSwissBaboonFailFish-3XXh37eRkQxCMWUR",
+		embed_url:
+      "https://clips.twitch.tv/embed?clip=TolerantSwissBaboonFailFish-3XXh37eRkQxCMWUR",
+		broadcaster_id: "75891532",
+		broadcaster_name: "Michel",
+		creator_id: "145214149",
+		creator_name: "jota_drk",
+		video_id: "2223210872",
+		game_id: "32399",
+		language: "pt-br",
+		title: "Pode dedo do coach ? ",
+		view_count: 393,
+		created_at: "2024-08-13T14:00:25Z",
+		thumbnail_url:
+      "https://clips-media-assets2.twitch.tv/0c-Aw9114d-3kZEMQjFlEQ/AT-cm%7C0c-Aw9114d-3kZEMQjFlEQ-preview-480x272.jpg",
+		duration: 12.4,
+		vod_offset: 1259,
+		is_featured: false,
+		streamer_name: "michel",
+	},
+];
+
+export const mockClips = [
+	{
+		id: "SeductiveBlueLorisArsonNoSexy-bSX7O_fUUzXudW3u",
+		url: "https://clips.twitch.tv/SeductiveBlueLorisArsonNoSexy-bSX7O_fUUzXudW3u",
+		embed_url:
+      "https://clips.twitch.tv/embed?clip=SeductiveBlueLorisArsonNoSexy-bSX7O_fUUzXudW3u",
+		broadcaster_id: "517877705",
+		broadcaster_name: "gaulestv",
+		creator_id: "71649056",
+		creator_name: "dynamitwOw",
+		video_id: "",
+		game_id: "32399",
+		language: "pt-br",
+		title: "Fofuria",
+		view_count: 47,
+		created_at: "2024-08-12T13:21:11Z",
+		thumbnail_url:
+      "https://clips-media-assets2.twitch.tv/7xKGXG0l-zv31FM17nVt7g/AT-cm%7C7xKGXG0l-zv31FM17nVt7g-preview-480x272.jpg",
+		duration: 51.7,
+		vod_offset: null,
+		is_featured: false,
+	},
+	{
+		id: "TolerantSwissBaboonFailFish-3XXh37eRkQxCMWUR",
+		url: "https://clips.twitch.tv/TolerantSwissBaboonFailFish-3XXh37eRkQxCMWUR",
+		embed_url:
+      "https://clips.twitch.tv/embed?clip=TolerantSwissBaboonFailFish-3XXh37eRkQxCMWUR",
+		broadcaster_id: "75891532",
+		broadcaster_name: "Michel",
+		creator_id: "145214149",
+		creator_name: "jota_drk",
+		video_id: "2223210872",
+		game_id: "32399",
+		language: "pt-br",
+		title: "Pode dedo do coach ? ",
+		view_count: 393,
+		created_at: "2024-08-13T14:00:25Z",
+		thumbnail_url:
+      "https://clips-media-assets2.twitch.tv/0c-Aw9114d-3kZEMQjFlEQ/AT-cm%7C0c-Aw9114d-3kZEMQjFlEQ-preview-480x272.jpg",
+		duration: 12.4,
+		vod_offset: 1259,
+		is_featured: false,
+	},
+];
