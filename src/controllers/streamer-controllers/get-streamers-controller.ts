@@ -12,7 +12,7 @@ export async function GetStreamersController(request: Request, response: Respons
 		const streamers =await getStreamersService.execute();
 
 		return response.json({
-			message: "Streamer encontrados com sucesso!",
+			message: "Streamers encontrados com sucesso!",
 			success: true,
 			streamers
 		}).status(200);
