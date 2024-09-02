@@ -13,7 +13,7 @@ export async function SaveClipController(request: Request, response: Response) {
 		await saveClipService.execute({ clipId, tokenTwitch });
 
 		return response.json({
-			message: "Clipes salvo com sucesso!",
+			message: "Clipe salvo com sucesso!",
 			success: true
 		}).status(200);
 	} catch (error) {

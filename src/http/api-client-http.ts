@@ -44,14 +44,23 @@ export async function GetStreamerInTwitchApiClient(name: string, tokenTwitch: st
 	}
 }
 
-export async function GetClipsInTwitchApiClient(streamerId: string, formattedDate: string, amount: string, tokenTwitch: string): Promise<Clip[]>{
+export async function GetClipsInTwitchApiClient(
+	streamerId: string,
+	formattedDate: string,
+	amount: string,
+	tokenTwitch: string
+): Promise<Clip[]> {
 	try {
-		const response = await twitchAxios.get(`clips?broadcaster_id${streamerId}&started_at=${formattedDate}&first=${amount}`, {
-			headers:{
-				"Client-ID": process.env.CLIENT_ID,
-				Authorization: `Bearer ${tokenTwitch}`
+		const response = await twitchAxios.get(
+			`clips?broadcaster_id=${streamerId}&started_at=${formattedDate}&first=${amount}`,
+			{
+				headers: {
+					"Client-ID": process.env.CLIENT_ID,
+					Authorization: `Bearer ${tokenTwitch}`,
+				},
 			}
-		});
+		);
+  
 		return await response.data.data;
 	} catch {
 		throw new GetClipsInTwitchApiClientError();

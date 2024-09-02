@@ -20,11 +20,12 @@ export async function GetClipsController(request: Request, response: Response) {
 		const streamerRepositoryDatabase = new StreamerRepositoryDatabase();  
 		const getClipsService = new GetClipsService(streamerRepositoryDatabase);
 
-		await getClipsService.execute(querys);
+		const clipes = await getClipsService.execute(querys);
 
 		return response.json({
 			message: "Clipes encontrados com sucesso!",
-			success: true
+			success: true,
+			clipes
 		}).status(200);
 	} catch (error) {
 		GetClipsHandleErrors(response, error);

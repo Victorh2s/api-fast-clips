@@ -1,27 +1,26 @@
-import { Clip } from "@prisma/client";
-import { StreamerRepositoryInterface } from "../../repositories/interfaces/streamer-repository-interface";
 import moment from "moment";
+import { StreamerRepositoryInterface } from "../../repositories/interfaces/streamer-repository-interface";
 import { GetClipsInTwitchApiClient } from "../../http/api-client-http";
+import { Clip } from "@prisma/client";
 
 interface GetClipsServiceInterface {
-    amount: string;
-    startedAt: string;
-    tokenTwitch: string;
+  amount: string;
+  startedAt: string;
+  tokenTwitch: string;
 }
 
 interface ClipInterface {
-    streamer_id: string;
-    streamer_name: string;
-    clips: Clip[];
+  streamer_id: string;
+  streamer_name: string;
+  clips: Clip[];
 }
 
-export class GetClipsService{
+export class GetClipsService {
 	constructor(
-        private StreamerRepositoryDatabase: StreamerRepositoryInterface
+    private StreamerRepositoryDatabase: StreamerRepositoryInterface
 	) {}
 
-	async execute({amount, startedAt, tokenTwitch}:GetClipsServiceInterface){
-
+	async execute({ amount, startedAt, tokenTwitch }: GetClipsServiceInterface) {
 		const streamers = await this.StreamerRepositoryDatabase.findManyStreamer();
 
 		const clips: ClipInterface[] = [];
@@ -39,7 +38,7 @@ export class GetClipsService{
 			clips.push({
 				streamer_id: streamer.id,
 				streamer_name: streamer.login,
-				clips: clipsStreamer
+				clips: clipsStreamer,
 			});
 		});
 
