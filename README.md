@@ -5,7 +5,7 @@ Um sistema para baixar clipes mais virais da Twitch de forma rápida e eficiente
 ## Requisitos para Rodar o Projeto
 
 - Node v20.10.0 instalado na sua máquina
-- Credenciais obtidas na Twitch Developer
+- Credenciais da Twitch Developer** (crie uma conta na [Twitch Developer](https://dev.twitch.tv/) para obter suas credenciais)
 - Banco de dados PostgreSQL
 
 ## Iniciando o Projeto
@@ -49,4 +49,4 @@ Um sistema para baixar clipes mais virais da Twitch de forma rápida e eficiente
 - Princípios SOLID
 - Microsserviços
 
-## Feito por DeVictor 👍😎👍
+## Feito por DeVictor
