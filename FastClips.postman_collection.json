@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "2d20465c-606b-4306-8264-bce28fb6ad58",
+		"name": "FastClips",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31832004"
+	},
+	"item": [
+		{
+			"name": "Clips",
+			"item": [
+				{
+					"name": "Get Clips",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Download Clips",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Save Clip",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/get-clips?amount=10&startedAt=2024-08-12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"get-clips"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "10"
+								},
+								{
+									"key": "startedAt",
+									"value": "2024-08-12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Clip",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/get-clips?amount=10&startedAt=2024-08-12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"get-clips"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "10"
+								},
+								{
+									"key": "startedAt",
+									"value": "2024-08-12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clips Saves",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Streamer",
+			"item": [
+				{
+					"name": "Add Streamer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"gaulestv\",\r\n    \"category\":\"Cs2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/add-streamer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"add-streamer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Streamers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/get-streamers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"get-streamers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Streamer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/add-streamer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"add-streamer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

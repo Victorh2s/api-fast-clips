@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api-fast-clips:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=api-fast-clips-docker
+      - POSTGRESQL_PASSWORD=api-fast-clips-docker
+      - POSTGRESQL_DATABASE=api-fast-clips-docker
