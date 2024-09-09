@@ -4,7 +4,10 @@ import fs from "fs";
 import { GetClipSrcAndTitleUtil } from "../../utils/get-clip-src-and-title-util";
 import ffmpeg from "fluent-ffmpeg";
 import { VideoNotFoundError } from "./errors/video-not-found-error";
+import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 interface DownloadClipServiceInterface {
     clipId: string;

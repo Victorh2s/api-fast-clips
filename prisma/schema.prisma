@@ -45,6 +45,6 @@ model Clip {
   duration         Float
   vod_offset      Int?
   is_featured      Boolean
-  streamer         Streamer @relation(fields: [streamer_name], references: [login])
+  streamer         Streamer @relation(fields: [streamer_name], references: [login], onDelete: Cascade)
   streamer_name    String
 }
