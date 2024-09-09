@@ -1,6 +1,6 @@
 # Fast Clips
 
-Um sistema para baixar clipes mais virais da Twitch de forma rápida e eficiente, com armazenamento local.
+Um sistema para baixar os clipes mais virais da Twitch de forma rápida e eficiente, com armazenamento local.
 
 ## Requisitos para Rodar o Projeto
 
